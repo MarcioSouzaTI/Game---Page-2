@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    color: #C2834C;
+    font-family: 'Krona One', sans-serif;
+}
+a:hover {
+    color: white;
+}
+h1, h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    /* padding: 15px; */
+    color: #D18D52;
+}
+p {
+    color: rgb(17, 3, 88);
+    font-family: Montserrat;    
+}
+/* ------------------- Menu de links -------------------- */
+
+.container-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    background-color: #041e36;
+    /* border: solid red 5px; */
+    box-shadow: 0px 5px 9px 1px rgb(24, 23, 23);    
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 700;    
+    margin-left: 65px;    
+}
+.logo a {
+    display: flex;
+    width: 230px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navbar {
+    display: flex;    
+    min-height: 70px;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 34px 0 0;
+    margin-right: 32px;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+.nav-link {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    transition: 0.5s ease;    
+}
+.menuha {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 42px;
+    height: 5px;
+    border-radius: 2px;
+    margin: 4px auto;
+    background-color: #C2834C;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ---------------------- Ajustes e conteúdos da página -------------------- */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70px;
+    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);*/
+    border: solid blue 5px;
+    height: auto;
+}
+/* ---------------------- Primeiro banner da página --------------------- */
+.main-content {
+    display: flex;    
+    /* background-image: url(../imagens/apresentarback.png);
+    background-size: 100%;            
+    background-position: center;
+    background-repeat: no-repeat; */
+    justify-content: center;
+    width: 100%;
+    height: 87vh;    
+    border: solid red 3px;
+}
+.test-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 6rem;
+    gap: 15px;
+    border: solid green;
+}
+
+/* ----------------------------- Área dos Projetos ------------------------- */
+
+.projetos{
+    display: flex;
+    flex-direction: column;    
+    position: relative;
+    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
+    /* border: solid rgb(52, 50, 50); */
+       
+}
+.projetos-titulo{
+    background: #042340;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.5rem;
+    /* border: solid black; */
+    width: 100%;
+}
+.projetos-texto{
+    text-align: center;    
+    padding-top: 50px;
+    padding-bottom: 20px;    
+    /* border: solid green; */
+}
+.projetos-box{
+    display: flex;    
+    /* border: solid blue; */
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+.projetos-box-card{
+    display: block;
+    position: relative;
+    /* border: solid red;     */
+    width: 17%;
+    text-align: center;
+    margin: 70px 70px 0 70px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.projetos-box-card a {
+    display: block;
+}
+.projetos-box-card h3{
+    height: 30px;
+}
+.teste{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    background: rgba(255, 255, 255, 0.2);    
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+.projetos-box-card:hover .teste {
+    visibility: visible;
+}
+
+/* ----------------------- Área do Rodapé ------------------- */
+.main-footer{
+    position: relative;
+    top: 70px;
+    background-color: #041e36;
+    /* border: solid red; */
+    
+}
+.social-cont{
+    display: flex;
+    /* border: solid yellow; */
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    gap: 30px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+    /* border: solid ; */
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+/* ----------------------- media query ---------------------- */
+@media (max-width:1024px) {
+    /* --------------------- Menu Hamburguer -------------------- */
+    .menuha {
+        display: block;
+    }
+    .menuha.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menuha.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menuha.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    .navbar {
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #041e36;
+        text-align: center;
+        flex-direction: column;
+        width: 60%;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+    /* --------------------- Apresentar -------------------- */
+    .apresentar {
+        flex-direction: column;
+        height: 518px;
+    }
+    .texto-btns {
+        width: 100%;
+        height: 510px;
+    }
+    .apresentar-img-container {
+        display: none;
+    }
+    .titulo {
+        /* background-image: url(../imagens/apresentar.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center; */
+        height: auto;
+        padding-right: 50px;
+        justify-content: center;
+        gap: 25px;
+    }
+    
+    .contato {
+        justify-content: center;
+        margin-right: 54px;
+        margin-bottom: 5px;
+        gap: 50px;
+    }
+    .apresentar-titulo {
+        font-size: 23px;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+    /* .nome-base {
+        flex-direction: initial;
+    } */
+    .apresentar-texto-dev {
+        font-size: 2.2rem;
+        align-items: flex-end;
+        padding-bottom: 1px;
+        /* color: black; */
+        font-weight: bolder;
+    }
+    .apresentar-nome {
+        width: 22rem;        
+        font-size: 45px;
+        font-weight: bolder;
+    }
+    .apresentar-texto {
+        font-size: 1.4rem;
+        font-weight: 900;
+    }
+}
+@media (max-width:768px) {
+    .logo {
+        margin-left: 50px;
+    }
+    .navbar {
+        margin-right: 20px;
+    }
+    /* ------------- Apresentar ---------- */
+    .apresentar-titulo {
+        margin: 0;
+    }
+    .titulo {
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+    .apresentar-texto-dev {
+        width: 24rem;
+        font-size: 1.6rem;
+    }
+    .apresentar-texto {
+        font-size: 1.2rem;
+        font-weight: normal;
+    }
+    .contato {
+        height: 50px;
+        margin-left: 30px;
+        gap: 10px;
+    }
+    .contato a {
+        font-size: 10px;
+        width: 110px;
+        height: 38px;
+    }
+    .contato-img {
+        width: 20px;
+        height: 44px;
+    }
+
+}
+@media (max-width:480px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .navbar{
+        margin-right: 5px;
+        padding: 0 10px 0 0;
+    }
+}
+/* ---------------- Primeiro banner ----------------- */
+

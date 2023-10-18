@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=PT+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+a {
+    color: #C2834C;
+    font-family: 'Krona One', sans-serif;
+}
+a:hover {
+    color: white;
+}
+h1, h2{
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    /* padding: 15px; */
+    color: #D18D52;
+}
+p {
+    color: rgb(17, 3, 88);
+    font-family: Montserrat;    
+}
+
+
+/* ---------------------- Ajustes e conteúdos da página -------------------- */
+.main-container{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 70px;    
+    border: solid blue 5px;
+    height: auto;
+}

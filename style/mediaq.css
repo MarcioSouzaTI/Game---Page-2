@@ -1,0 +1,59 @@
+/* ----------------------- media query ---------------------- */
+@media (max-width:1024px) {
+    /* --------------------- Menu Hamburguer -------------------- */
+    .menuha {
+        display: block;
+    }
+    .menuha.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menuha.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menuha.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    .navbar {
+        justify-content: flex-end;
+        margin-right: 50px;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #041e36;
+        text-align: center;
+        flex-direction: column;
+        width: 60%;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .nav-menu.active {
+        left: 0;
+    }    
+}
+@media (max-width:768px) {
+    .logo {
+        margin-left: 50px;
+    }
+    .navbar {
+        margin-right: 20px;
+    }    
+
+}
+@media (max-width:480px) {
+    .logo {
+        margin-left: 20px;
+    }
+    .navbar{
+        margin-right: 5px;
+        padding: 0 10px 0 0;
+    }
+}
