@@ -26,7 +26,13 @@ p {
     color: rgb(17, 3, 88);
     font-family: Montserrat;    
 }
-
+body{
+    display: flex;
+    flex-direction: column;
+    /* width: 100vw; */
+    height: 98vh;
+    border: solid rebeccapurple;
+}
 
 /* ---------------------- Ajustes e conteúdos da página -------------------- */
 .main-container{

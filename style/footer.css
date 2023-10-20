@@ -1,14 +1,16 @@
 /* ----------------------- Área do Rodapé ------------------- */
 .main-footer{
-    position: relative;
-    top: 70px;
+    position: fixed;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
     background-color: #041e36;
     border: solid red;
     
 }
 .social-cont{
     display: flex;
-    border: solid yellow;
+    /* border: solid yellow; */
     justify-content: center;
     align-items: center;
     height: 70px;
@@ -20,12 +22,10 @@
     align-items: center;
     height: 50px;
     color: white;
-    border: solid ;
+    /* border: solid ; */
 }
-.designer{
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0px 5px;
+.cp-text{ 
+    color: rgba(151, 149, 149, 0.7); 
+    text-shadow: 0 1px rgba(219, 186, 186, 0.288);
+    
 }

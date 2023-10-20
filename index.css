@@ -98,11 +98,12 @@ p {
 }
 /* ---------------------- Primeiro banner da página --------------------- */
 .main-content {
-    display: flex;    
-    /* background-image: url(../imagens/apresentarback.png);
-    background-size: 100%;            
+    display: flex;
+    background-image: url(imagens/back-apresentar.png);    
+    /* background-image: url(imagens/backapresentar.png); */
+    background-size: 70%;            
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     justify-content: center;
     width: 100%;
     height: 87vh;    
@@ -203,12 +204,10 @@ p {
     color: white;
     /* border: solid ; */
 }
-.designer{
-    opacity: 0.7;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 400;
-    margin: 0px 5px;
+.cp-text{ 
+    color: rgba(151, 149, 149, 0.7); 
+    text-shadow: 0 1px rgba(219, 186, 186, 0.288);
+    
 }
 /* ----------------------- media query ---------------------- */
 @media (max-width:1024px) {
