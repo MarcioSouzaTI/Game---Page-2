@@ -1,11 +1,9 @@
 /* ----------------------- Área do Rodapé ------------------- */
 .main-footer{
-    position: fixed;
-    left: 0;
-    bottom: 0px;
-    width: 100%;
+    position: relative;
+    top: 70px;
     background-color: #041e36;
-    border: solid red;
+    /* border: solid red; */
     
 }
 .social-cont{
@@ -15,6 +13,9 @@
     align-items: center;
     height: 70px;
     gap: 30px;
+}
+.social-cont a img{
+    width: 40px;
 }
 .footer-bottom{
     display: flex;

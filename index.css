@@ -196,6 +196,9 @@ p {
     height: 70px;
     gap: 30px;
 }
+.social-cont a img{
+    width: 40px;
+}
 .footer-bottom{
     display: flex;
     justify-content: center;

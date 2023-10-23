@@ -27,11 +27,11 @@ p {
     font-family: Montserrat;    
 }
 body{
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* width: 100vw; */
-    height: 98vh;
-    border: solid rebeccapurple;
+    /* height: 900px; */
+    /* border: solid rebeccapurple; */
 }
 
 /* ---------------------- Ajustes e conteúdos da página -------------------- */
@@ -41,5 +41,5 @@ body{
     position: relative;
     top: 70px;    
     border: solid blue 5px;
-    height: auto;
+    /* height: 550px; */
 }

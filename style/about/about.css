@@ -1,29 +1,13 @@
-/* ---------------------- Primeiro banner da página --------------------- */
-.main-content {
-    display: flex;    
-    justify-content: center;
-    width: 100%;
-    height: 20vh;    
-    border: solid red 3px;
-}
-.test-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 30rem;
-    height: 6rem;
-    gap: 15px;
-    border: solid green;
-}
-
 /* ----------------------------- Área dos Projetos ------------------------- */
-
 .projetos{
     display: flex;
     flex-direction: column;    
     position: relative;
-    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
-    border: solid rgb(52, 50, 50);
+    background-image: url(../../imagens/011.jpg);
+    height: 542px;
+    background-size: 35%;
+    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36); */
+    border: solid red;
        
 }
 .projetos-titulo{
@@ -49,11 +33,19 @@
 .projetos-box-card{
     display: block;
     position: relative;
+    background-color: rgb(57, 57, 219);
+    /* background-image: url(../../imagens/characters/Lavian.png);
+    background-size: 50px; */
     border: solid red;
+    border-radius: 8px;
+    height: 256px;
     width: 17%;
     text-align: center;
     margin: 70px 70px 0 70px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.projetos-box-card h3{
+    top: 20px;
 }
 .projetos-box-card a {
     display: block;
