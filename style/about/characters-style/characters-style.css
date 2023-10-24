@@ -1,65 +1,67 @@
-/* ----------- Área do conteúdo do game ------------- */
-.game-content{
+/* ---------------------- Primeiro banner da página --------------------- */
+.main-content {
+    display: flex;    
+    justify-content: center;
+    width: 100%;
+    height: 20vh;    
+    border: solid red 3px;
+}
+.test-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 6rem;
+    gap: 15px;
+    border: solid green;
+}
+
+/* ----------------------------- Área dos Projetos ------------------------- */
+
+.projetos{
     display: flex;
     flex-direction: column;    
     position: relative;
-    background-image: url(../../imagens/011.jpg);
-    height: auto;
-    background-size: 35%;
-    /* background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36); */
-    border: solid red;
+    background-image: radial-gradient(circle, #0053af, #004185, #00305c, #041e36);
+    border: solid rgb(52, 50, 50);
        
 }
-/* --------- Título do game ----------- */
-.game-title{
-    display: flex;    
+.projetos-titulo{
     background: #042340;
     font-family: 'Krona One', sans-serif;
     font-size: 1.5rem;
     border: solid black;
-    justify-content: center;
-    align-items: center;
     width: 100%;
-    height: 60px;
 }
-.game-text{
+.projetos-texto{
     text-align: center;    
     padding-top: 50px;
     padding-bottom: 20px;    
     border: solid green;
 }
-.game-box{
+.projetos-box{
     display: flex;    
     border: solid blue;
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 70px;
 }
-.box-card{
+.projetos-box-card{
     display: block;
     position: relative;
-    background-color: rgb(57, 57, 219);
-    /* background-image: url(../../imagens/characters/Lavian.png);
-    background-size: 50px; */
     border: solid red;
-    border-radius: 8px 8px 0 0;
-    /* height: 16rem; */
-    width: 20%;
+    width: 17%;
     text-align: center;
     margin: 70px 70px 0 70px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.box-card h3{
-    background-color: #80b2e1;    
-    position: relative;
-    top: -1px;
-    margin: 0 -3px;
-    border: solid;
-}
-.box-card a {
+.projetos-box-card a {
     display: block;
 }
-.cover{
+.projetos-box-card h3{
+    height: 30px;
+}
+.teste{
     visibility: hidden;
     position: absolute;
     top: 0;
@@ -69,9 +71,8 @@
     height: 100%;
     width: 100%;
     text-align: center;
-    padding: 100px 15px 0 15px;
+    padding-top: 30px;
 }
-.box-card:hover .cover {
+.projetos-box-card:hover .teste {
     visibility: visible;
 }
-
